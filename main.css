@@ -1,0 +1,36 @@
+.greetings{
+    font-size: 250%;
+    margin: 1%;
+    /* color: red; */
+    font-weight: 400;
+}
+
+.choose_subject{
+    background-color: aquamarine;
+    border:2px black solid;
+	border-radius: 50%;
+	/* background-color:#FBC4AD; */
+	width:200px;
+	font-size: 150%;
+	/*text-align: center;*/
+	height: 200px;
+	position: relative;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	/*margin-top: 5%;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:5%;
+	color: black;
+	flex-direction: column; 
+}
+
+.table_choose_subject{
+    margin-left: 1%;
+    width: 100%;
+}
+
+.fun{
+    width: 400px;
+}
