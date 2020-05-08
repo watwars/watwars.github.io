@@ -10,8 +10,8 @@
 }
 
 
-.sub-topics{
-    border: 1px solid black;
+#divTopics{
+    /* border: 1px solid black; */
     width: 400px;
     height: 500px;
     position: absolute;

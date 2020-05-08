@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>For Kevin</title>
+        <style>
+            img{
+                width: 400px;
+            }
+            p{
+                font-size: 25px;
+            }
+            #hard-answer{
+                margin-left: 20px;
+                margin-right: 30px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="maths.js"></script>
+    </head>
+    <body>
+        <p>This is the plan for the garden of Mr. Kevin. The outside shape is a perfect circle with an equilateral triangle in the middle.
+            The radius of the circle is the answer of the following equation: 3<sup>3</sup> &#247; 9 + 1 + 2 x 3. Furthermore, we know that the height of the triangle
+            is 16 meters and the base of the triangle is equal to 32 &#247; &#8730;3. Lastly, we know that the area noted A is the third of the semi-circle. Calculate the area of A.
+        </p>
+        <!-- <p>Use 1.7 for &#8730;3 and 3.1 for &#960;</p> -->
+        <p>You can use your calculator.</p>
+        <p>Round your answer to 2 decimal places</p>
+        <img src="images/geometry_area_1.jpg" alt="Good Question">
+
+        <form>
+            Your answer:  <input id="hard-answer" type="text">
+            <button onclick="check()" class="btn btn-info">Check your answer</button>
+            <button onclick="haha()" class="btn btn-info">Reveal the correct answer</button>
+        </form>
+
+        <p id="yesorno"></p>
+        
+    </body>
+</html>
