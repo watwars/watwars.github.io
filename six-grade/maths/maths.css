@@ -1,0 +1,20 @@
+.list-group-item{
+    width: 30%;
+    margin-left: 100px;;
+}
+#sub-topics{
+    line-height: 45px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+
+.sub-topics{
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 800px;
+    top: 200px;
+}

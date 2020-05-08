@@ -2,7 +2,10 @@
     <head>
         <title>Learning in a Cool Way</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="../../main.css">
+        <link rel="stylesheet" href="maths.css">
+        <script src="maths.js"></script>
+        
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -61,27 +64,19 @@
             </div>
         </nav>
 
-        <h1 class="topic-title">Mathematics</h1>
+        <h1 class="topic-title">6th Grade Mathematics</h1><br><br>
 
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="images/mathematics.jpg" alt="Mathematics">
-            <div class="card-body">
-              <h5 class="card-title">Mathematics</h5>
-              <p class="card-text">In the mathematics section of this website, you will find exercises on topics that include arithmetics, geometry, algebra and functions.</p>
-              <a href="six-grade/maths/index-maths.html" class="btn btn-primary buttons">6th grade mathematics</a>
-              <a href="#" class="btn btn-primary buttons">7th grade mathematics</a>
-              <a href="#" class="btn btn-primary buttons">8h grade mathematics</a>
-            </div>
-        </div>
+        <ul class="list-group">
+            <li><a id="arithmetics" onclick="arithmetics()" class="list-group-item">Arithmetics</a></li>
+            <li><a id="proportion" onclick="proportion()" class="list-group-item">Proportion</a></li>
+            <li><a id="geometry" onclick="geometry()" class="list-group-item">Geometry</a></li>
+            <li><a id="statistics" onclick="statistics()" class="list-group-item">Statistics</a></li>
+            <li><a id="problem-solving" onclick="problemSolving()" class="list-group-item">Problem solving</a></li>
+        </ul>
 
-        <div class="why-study container">
-            <h2>Why do we study maths?</h2><br>
-            <p>While it may seem like math problems like the ones above have no real use in life, this couldn’t be farther
-                 from the truth!  Math is incredibly important in our lives and, without realizing it, we use mathematical concepts, 
-                 as well as the skills we learn from doing math problems every day. The laws of mathematics govern everything around us
-                and without a good understanding of them, one can encounter significant difficulties in life.</p><br>
-            <img class="img-responsive" src="images/maths-topics.png" alt="Topics in Mathematics">
-        </div>
+        <div class="sub-topics"><p id="sub-topics"></p></div>
+
+       
 
      
 
