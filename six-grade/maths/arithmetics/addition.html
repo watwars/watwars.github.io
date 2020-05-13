@@ -2,7 +2,11 @@
     <head>
         <title>Learning in a Cool Way</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="../../../main.css">
+        <link rel="stylesheet" href="../maths.css">
+        <script src="maths.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -14,7 +18,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../../../index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -22,7 +26,7 @@
                   </a>
                   <!-- TODO: add links -->
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="six-grade/maths/index-maths.html">Mathematics</a>
+                    <a class="dropdown-item" href="#">Mathematics</a>
                     <a class="dropdown-item" href="#">French</a>
                     <a class="dropdown-item" href="#">Sciences</a>
                     <a class="dropdown-item" href="#">History</a>
@@ -61,36 +65,71 @@
             </div>
         </nav>
 
-        <p class="greetings">WELCOME, ARE YOU READY TO HAVE FUN WHILE STUDYING? PLEASE DIVE IN AND DO OUR INTERACTIVE 
-            LEARNING ACTIVITIES IN SUBJECTS SUCH AS:</p>
-        
-        <table class="table_choose_subject">
+        <h1 class="topic-title">Addition</h1><br>
+
+        <table>
             <tr>
                 <td>
-                    <div class="choose_subject rounded-circle"><a href="mathematics.html">MATHEMATICS</a></div>
+                    <div id="num1" class="randomnum"></div>
                 </td>
+                <td class="sign">+</td>
                 <td>
-                    <div class="choose_subject rounded-circle"><a href="french.html">FRENCH</a></div>
+                    <div id="num2" class="randomnum"></div>
                 </td>
-                <td>
-                    <div class="choose_subject rounded-circle"><a href="sciences.html">SCIENCES</a></div>
-                </td>
-                <td>
-                    <div class="choose_subject rounded-circle"><a href="history.html">HISTORY</a></div>
-                </td>
-                <td>
-                    <img class="fun rounded" src="images/fun.jpg" alt="Kids having fun">
-
-                </td>
+                <td class="sign">=</td>
             </tr>
         </table>
-        <br><br><br><br><br><br>
-        <blockquote class="blockquote text-center">
-            <p class="mb-0">Playtime is precious. Play builds brain pathways for thinking, creativity, flexibility, empathy and many other lifelong skills.</p>
-            <footer class="blockquote-footer"><cite>Heather Shumaker</cite></footer>
-        </blockquote>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <input type="text" id="useranswer">
+
+        <p id="index"></p><br><br>
+
+        <button class="btn btn-info" onclick="check()">Check your answer</button>
+        <button class="btn btn-info" onclick="next()">Next question</button>
+        <br><br><br><br><br>
+        <div class="container">
+            <p id="result"></p>
+        </div>
+        
+       
+        <script>
+            var num1 = Math.floor(Math.random() * 10000);
+            var num2 = Math.floor(Math.random() * 10000);
+            $("#num1").text(num1);
+            $("#num2").text(num2);
+
+            var index = 1;
+            var answeredQuestion = 0;
+            var userscore = 0;
+
+            function check(){
+                answeredQuestion++;
+                var useranswer = parseInt($("#useranswer").val());
+                if(useranswer == num1 + num2){
+                    $("#result").text("You got it right. Good job!");
+                    userscore++;
+                }else{
+                    $("#result").text("Wrong answer, the correct answer is " + (num1 + num2));
+                }
+                if(answeredQuestion == 10){
+                    window.location = "additionFinal.html"
+                }
+                localStorage.setItem("userscore", userscore)
+            }
+
+            function next(){
+                index++;
+                num1= Math.floor(Math.random() * 10000)
+                num2 = Math.floor(Math.random() * 10000)
+                $("#num1").text(num1);
+                $("#num2").text(num2);
+                document.getElementById("useranswer").value=""
+                $("#index").text("You are at question " + index + " out of 10")
+            }
+            $("#index").text("You are at question " + index + " out of 10")
+        </script>
+     
+
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>

@@ -1,17 +1,28 @@
 // document.getElementById("lol").addEventListener("click", arithmetics());
 
-var arithmeticsTopics = ["<a href = 'subtraction.html'>Subtraction</a>", 
-"<a href='multiplication.html'>Multiplication</a>", 
-"<a href='division.html'>Division</a>", 
-"<a href='exponents.html'>Exponents</a>", 
-"<a href='fraction.html'>Fraction</a>",
- "<a href='percentage.html'>Percentage</a>"];
+var arithmeticsTopics = [
+    "<a href ='arithmetics/subtraction.html'>Subtraction</a>", 
+    "<a href='arithmetics/multiplication.html'>Multiplication</a>", 
+    "<a href='arithmetics/division.html'>Division</a>", 
+    "<a href='arithmetics/exponents.html'>Exponents</a>", 
+    "<a href='arithmetics/fraction.html'>Fraction</a>",
+    "<a href='arithmetics/percentage.html'>Percentage</a>"
+];
 
+var geometryTopics=[];
+
+var proportionTopics=[
+
+];
+
+var statisticsTopics=[];
+
+var problemSolvingTopics=[];
  
 
 
 function arithmetics(){
-    var arithTopics = "<a href='addition.html'>Addition</a>";
+    var arithTopics = "<a href='arithmetics/addition.html'>Addition</a>";
     for(var i = 0; i < arithmeticsTopics.length; i++){
          arithTopics += '<br />' + arithmeticsTopics[i];
     }
@@ -20,35 +31,39 @@ function arithmetics(){
 }
 
 function proportion(){
-    document.getElementById("sub-topics").innerHTML = "Kevin est un piwa"
+    var propTopics = "<a href='proportion/unitConversion.html'>Unit Conversion</a>";
+    for(var i = 0; i < proportionTopics.length; i++){
+         propTopics += '<br />' + proportionTopics[i];
+    }
+    document.getElementById("sub-topics").innerHTML = propTopics;
+    document.getElementById("divTopics").style.border= "1px black solid";
 }
 
 function geometry(){
-    document.getElementById("sub-topics").innerHTML = "Kevin est un piwa"
+    var geoTopics = "<a href='geometry/perimeter.html'>Perimeter</a>";
+    for(var i = 0; i < geometryTopics.length; i++){
+         geoTopics += '<br />' + geometryTopics[i];
+    }
+    document.getElementById("sub-topics").innerHTML = geoTopics;
+    document.getElementById("divTopics").style.border= "1px black solid";
 }
 
 function statistics(){
-    document.getElementById("sub-topics").innerHTML = "Kevin est un piwa"
-}
-
-function problemSolving(){
-    document.getElementById("sub-topics").innerHTML = "Kevin est un piwa"
-}
-
-
-
-var answer = ((Math.PI * 100) - (8 * (32/ Math.sqrt(3)))) / 3 / 3;
-answer = Math.round(answer * 100) / 100;
-// alert(answer);
-function check(){
-    var useranswer = document.getElementById("hard-answer").value;
-    if(useranswer == answer){
-        alert("You got it right");
-    }else{
-        alert("You got it wrong");
+    var statTopics = "<a href='statistics/mean.html'>Mean</a>";
+    for(var i = 0; i < statisticsTopics.length; i++){
+         statTopics += '<br />' + statisticsTopics[i];
     }
+    document.getElementById("sub-topics").innerHTML = statTopics;
+    document.getElementById("divTopics").style.border= "1px black solid";
+}
+function problemSolving(){
+    var probTopics = "<a href='probSolving/consumer.html'>Consumer Problems</a>";
+    for(var i = 0; i < problemSolvingTopics.length; i++){
+         probTopics += '<br />' + probSolvingTopics[i];
+    }
+    document.getElementById("sub-topics").innerHTML = probTopics;
+    document.getElementById("divTopics").style.border= "1px black solid";
 }
 
-function haha(){
-   alert("Don't give up, continue trying and you will figure out the correct answer. I cannot tell it to you.");
-}
+
+
