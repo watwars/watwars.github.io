@@ -1,0 +1,80 @@
+.top-heading{
+	position: absolute;
+	top: 100px;
+	left: 50px;
+
+}
+.warning{
+	position: absolute;
+	top: 250px;
+	left: 400px;
+	font-size: 90px;
+	color: red;
+}
+
+.grabcv{
+	font-size: 30px;
+}
+
+.contact{
+	background-color: gray;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+.about-me{
+	background-color: white;
+	width: 500px;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*.about-me-title{
+	text-align: center;
+}*/
+
+.skills{
+	background-color: white;
+	width: 500px;
+	text-align: justify;
+}
+
+.experience{
+	background-color: white;
+	width: 500px;
+	text-align: justify;
+}
+
+.education{
+	background-color: white;
+	width: 500px;
+	text-align: justify;
+}
+
+table{
+	margin-right: auto;
+	margin-left: auto;
+}
+.honors{
+	background-color: white;
+	width: 500px;
+	text-align: justify;
+}
+
+td{
+	padding:10px;
+}
+
+img.myphoto{
+	position: absolute;
+	left: 343px;
+	top: 240px;
+}
+
+.xinchengshen{
+	margin-top: 30px;
+	font-size: 80px;
+	font-family: Calistoga;
+}
