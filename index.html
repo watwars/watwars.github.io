@@ -1,149 +1,182 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Xin Cheng Shen</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link rel="stylesheet" type="text/css" href="style/personal.css">
-	<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
-
-
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin Cheng Shen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-	<!-- button instead of navbar, possibility???-->
-	<!-- <div class="btn-group">
-		<button class="btn btn-dark" disabled="disabled">Xin Cheng Shen</button>
-		<button class="btn btn-dark">About Me</button>
-		<button class="btn btn-dark">Skills</button>
-		<button class="btn btn-dark">Experience</button>
-		<button class="btn btn-dark">Contact</button>
-	</div> -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Xin Cheng Shen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#accomplishments">Accomplishments</a>
+            </li> -->
+          </ul>
+        </div>
+    </nav>
 
-	<!-- Add the links in the navbar -->
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-		<ul class="navbar-nav">
-			<li class="nav-item">
-				<a href="#topheading"class="nav-link">Xin Cheng Shen</a>
-			</li>
-			<li class="nav-item">
-				<a href="#about-me" class="nav-link">About Me</a>
-			</li>
-			<li class="nav-item">
-				<a href="#education" class="nav-link">Education</a>
-			</li>
-			<li class="nav-item">
-				<a href="#skills" class="nav-link">Skills</a>
-			</li>
-			<li class="nav-item">
-				<a href="#experience" class="nav-link">Experience</a>
-			</li>
-			<li class="nav-item">
-				<a href="#contact" class="nav-link">Contact</a>
-			</li>
-			<li class="nav-item">
-				<a href="#honors" class="nav-link">Honors and Awards</a>
-			</li>
-		</ul>
-	</nav>
+    <section class="main">
+        <div class="container">
+            <img src="" alt="My Photo" class="main-image">
+            <div class="main-text">
+                <div class="main-header">Hi, I Am <br><span class="name">Xin Cheng Shen</span>.</div>
+                <div class="sub-header">Full-Stack Web Developer</div>
+                <div class="logos">
+                    <a href="mailto:shex7219589@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+                    <a href="https://www.facebook.com/xincheng.shen.7"><i class="fa fa-facebook-official fa-2x"></i></a>
+                    <a href="https://github.com/watwars"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/xin-cheng-shen-b03207171/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about-h">About Me</h2>
+            <!-- <p class="about-desc">Hi, I am Xin Cheng Shen, an incoming Computer Science student at the University of Waterloo. 
+                I am passionate about Web Development and I love working on side projects that could have a greater 
+                impact on people around me. Moreover, I am highly interested in exploring new fields such as 
+                Data Science and Machine Learning.</p> -->
+            <p class="about-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rem voluptate soluta dignissimos delectus autem provident eum nesciunt labore cumque, minima r
+                epellat aperiam nihil! Quod placeat dolor corporis nisi veniam?</p>
+            <a href="resume.pdf"><button class="btn btn-info btn-lg about-btn"><i class="fa fa-download"></i>Download my resume</button></a>
+        </div>
+    </section>
 
+    <section class="education" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h2 class="about-h edu-h">Education</h2>
+                </div>
+                <div class="column">
+                    <div class="schools">
+                        <h3>University of Waterloo</h3>
+                        <p><em>Undergraduate in Computer Sciece</em> - June 2025</p>
+                    </div>
+                    <div class="schools">
+                        <h3>Marianopolis College</h3>
+                        <p><em>Diploma in Honours Pure & Applied Science</em> - June 2020</p>
+                    </div>
+                    <div class="schools">
+                        <h3>Collège Jean-de-Brébeuf</h3>
+                        <p><em>High School Diploma</em> - June 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- top image and name -->
-	<!-- need to change position and styling -->
-	<!-- <div class="container"> -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="about-h">Skills</h2>
+            <div class="skill-div">
+                <h3>HTML</h3>
+                <div class="progress progress-b">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-div">
+                <h3>CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                    aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-div">
+                <h3>JavaScript</h3>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                    aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-div">
+                <h3>NodeJS, Express & MongoDB</h3>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-div">
+                <h3>Java</h3>
+                <div class="progress progress-b">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="30"
+                    aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<img class="myphoto" src="aall.jpg" alt="Photo of Xin Cheng" width="250px" height="300px">
-	<!-- <h1 class="top-heading">Xin Cheng Shen</h1> -->
-	<!-- <br clear="right"> -->
-	<div class="topheading">
-		<a id="topheading">
-		<h1 class="xinchengshen" align="center">Xin Cheng Shen</h1>
-		<h2 align="center">Honours Pure and Applied Science Student at Marianopolis College</h2>
-	</div>
-	<!-- <h1 class="warning">Under construction</h1> -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="about-h" style="margin-bottom: 30px;">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/coronavirus.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Coronavirus Tracker</h5>
+                          <p class="card-text">Simple Coronavirus Tracker with live data from all countries</p>
+                          <a href="#" class="btn btn-primary">Link not available yet</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/ecomm.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">E-Commerce Website</h5>
+                          <p class="card-text">E-commerce website created using NodeJS, MongoDB, Express and Passport</p>
+                          <a href="#" class="btn btn-primary">Link not available yet</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- br><br><br> -->
+    
 
-	<div class="about-me">
-		<a id="about-me">
-		<div class="about-me-title">
-			<h2>About me</h2>
-		</div>
-		<hr width="500px" size="30">
-		<p>Motivated student at Marianopolis College who demonstrates a strong self-learning and collaboration skill. Seeking for better opportunities which can help me develop more skills and to have a greater impact on our society. My focus lies on software engineering and web developing.</p>
-	</div>
+    <footer>
+        <div class="logos center">
+            <a href="mailto:shex7219589@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+            <a href="https://www.facebook.com/xincheng.shen.7"><i class="fa fa-facebook-official fa-2x"></i></a>
+            <a href="https://github.com/watwars"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/xin-cheng-shen-b03207171/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        </div>
+    </footer>
 
-	<!-- position to be determined -->
-	<table class="icon-table">
-		<tr>
-			<td>
-				<div class="facebook">
-					<a href="https://www.facebook.com/xincheng.shen.7"><img width="40px" src="res/facebook.png"></a>
-				</div>
-			</td>
-			<td>
-				<div class="linkedin">
-					<a href="https://www.linkedin.com/in/xin-cheng-shen-b03207171/"><img width="40px" src="res/linkedin.png"></a>
-				</div>
-			</td>
-		</tr>
-	</table>
-
-	<br><br><br><br>
-
-	<table border="1">
-		<tr>
-			<td>
-				<div class="education">
-					<a id="education">
-					<h2>Education</h2>
-					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.></p>
-				</div>
-			</td>
-			<td>
-				<div class="skills">
-					<a id="skills">
-					<h2>Skills</h2>
-					<p>Doner ham ground round ham hock ribeye meatloaf fatback jowl. Flank salami corned beef pastrami t-bone cupim landjaeger. Biltong shoulder sirloin ball tip pancetta, boudin short ribs pig porchetta spare ribs sausage bacon burgdoggen brisket. Capicola meatball pig, beef ribs kielbasa pork belly salami tenderloin kevin alcatra porchetta doner swine buffalo t-bone. Pork loin biltong rump ham alcatra hamburger. Sausage bresaola cupim, pig drumstick tenderloin sort loin corned beef tongue beef kevin. Pork swine cow boudin, pastrami ball tip done.</p>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div class="experience">
-					<a id="experience">
-					<h2>Experience</h2>
-					<p>Doner ham ground round ham hock ribeye meatloaf fatback jowl. Flank salami corned beef pastrami t-bone cupim landjaeger. Biltong shoulder sirloin ball tip pancetta, boudin short ribs pig porchetta spare ribs sausage bacon burgdoggen brisket. Capicola meatball pig, beef ribs kielbasa pork belly salami tenderloin kevin alcatra porchetta doner swine buffalo t-bone. Pork loin biltong rump ham alcatra hamburger. Sausage bresaola cupim, pig drumick tenderloin short loin corned beef tongue beef kevin. Pork swine cow boudin, pastrami ball tip doner.</p>
-				</div>
-			</td>
-			<td>
-				<div class="honors">
-					<a id="honors">
-					<h2>Honors and Awards</h2>
-					<p>oner ham ground round ham hock ribeye meatloaf fatback jowl. Flank salami corned beef pastrami t-bone cupim landjaeger. Biltong shoulder sirloin ball tip pancetta, boudin short ribs pig porchetta spare ribs sausage bacon burgdoggen brisket. Capicola meatball pig, beef ribs kielbasa pork belly salami tenderloin kevin alcatra porchetta doner swine buffalo t-bone. Pork loin biltong rump ham alcatra hamburger. Sausage bresaola cupim, pig drumick tenderloin short loin co</p>
-				</div>
-			</td>
-		</tr>
-	</table>
-	<br><br><br>
-	<h1>Projects</h1>
-	<a href="learning/index.html">Learning Website</a>
-	<a href="color/colorGame.html">Guess the Color Game</a>
-	<!-- need to change background and styling -->
-	<div class="contact">
-		<a id="contact">
-		<h2>Contact</h2>
-		<p>shex7219589@gmail.com</p>
-		<p>(438)-505-3070</p>
-	</div>
-
-
-	<!-- cv -->
-	<p align="center"><a class="btn btn-success grabcv" href="res/resume.pdf">Download my CV</a></p>
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>

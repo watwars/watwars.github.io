@@ -1,0 +1,131 @@
+.main-header{
+    font-size: 4rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-image{
+    width: 20rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    max-width: 100%;
+    height: auto;
+}
+
+.sub-header{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.name{
+    font-size: 4.5rem;
+}
+
+.main{
+    height: 800px;
+    background-color: rgb(223, 236, 240);
+}
+
+.main-text{
+    float: right;
+    width: 55%;
+    max-width: 100%;
+    padding-top: 3rem;
+}
+
+.container{
+    padding-top: 7rem;
+}
+
+.fa{
+    width: 50px;
+}
+
+.logos{
+    margin-top:30px;
+}
+
+.about{
+    height: 600px;
+    background-color: rgb(212, 212, 205);
+}
+.about-h{
+    border-bottom: 5px blue solid;
+    font-size: 3rem;
+    display: inline-block;
+}
+.about-desc{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.about-btn{
+    margin-top: 2rem;
+}
+
+.center{
+    text-align:center;
+    margin-top: auto;
+    padding-top: 80px;
+}
+
+footer{
+    height: 200px;
+    background-color: black;
+}
+
+.center .fa{
+    width: 70px;
+}
+
+.education{
+    height: 500px;
+    background-color: rgb(206, 206, 206);
+}
+
+.column {
+    float: left;
+    width: 40%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.edu-h{
+    text-align: right;
+}
+
+.skills{
+    height: 800px;
+}
+
+.skill-div{
+    margin-top: 40px;
+}
+
+.progress{
+   height: 30px !important;
+}
+
+.progress-bar{
+    background-color:green !important;
+}
+
+.projects{
+    height: 900px;
+    background-color: rgb(221, 238, 221);
+}
+
+.card{
+    margin-top: 30px;
+    padding-right: 30px !important;
+    height: 27rem;
+}
+
+.card-img-top{
+    width: 17.9rem !important;
+}
